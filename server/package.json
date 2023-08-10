@@ -1,0 +1,15 @@
+{
+  "name": "explore",
+  "version": "1.0.0",
+  "description": "will help in exploring Uttarakhand ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep Bisht",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "typescript": "^5.1.6"
+  }
+}
