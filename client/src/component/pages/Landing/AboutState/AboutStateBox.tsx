@@ -25,7 +25,6 @@ const AboutStateBox = (props: Props) => {
       </Typography>
       <Box margin="1rem">
         <Grid container spacing={1}>
-          z
           <Grid item xs={6}>
             <Item>
               <Box display="flex" alignItems={"center"}>

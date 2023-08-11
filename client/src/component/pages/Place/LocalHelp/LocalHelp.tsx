@@ -1,11 +1,9 @@
+import Box from "@mui/material/Box";
+
 type Props = {};
 
 const LocalHelp = (props: Props) => {
-  return (
-    <div style={{ height: "100rem", backgroundColor: "red", width: "100%" }}>
-      LocalHelp
-    </div>
-  );
+  return <Box>LocalHelp</Box>;
 };
 
 export default LocalHelp;
