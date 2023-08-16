@@ -9,6 +9,7 @@ import PlaceCommon from "./component/pages/Place/PlaceCommon";
 import HowToReach from "./component/pages/Place/HowToReach/HowToReach";
 import LocalHelp from "./component/pages/Place/LocalHelp/LocalHelp";
 import PlaceData from "./component/pages/Place/PlaceData/PlaceData";
+import TravelAgent from "./component/pages/Place/TravelAgent/TravelAgent";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="how-to-reach" element={<HowToReach />} />
                 <Route path="local-help" element={<LocalHelp />} />
                 <Route path="place-data" element={<PlaceData />} />
+                <Route path="travel-agent" element={<TravelAgent />} />
               </Route>
             </Routes>
           </div>
