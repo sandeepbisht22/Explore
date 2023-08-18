@@ -25,9 +25,10 @@ const HoverButton = (props: Props) => {
         left: "1rem",
         top: "10rem",
         opacity: "0.7",
-        background: "grey",
+        background: "orange",
         padding: "0.3rem",
-        borderRadius: "1rem",
+        borderRadius: "2rem",
+        paddingY: "1rem",
       }}
     >
       {currentPath[currentPath.length - 1] !== "how-to-reach" && (

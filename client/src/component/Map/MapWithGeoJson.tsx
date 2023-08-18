@@ -21,7 +21,7 @@ const MapWithGeoJson = () => {
   const navigate = useNavigate();
 
   const markerClicked = () => {
-    navigate("/place");
+    navigate("/place/place-data");
   };
   return (
     <Box width="100%" marginY="2rem" height="35rem" border={"2px solid black"}>
