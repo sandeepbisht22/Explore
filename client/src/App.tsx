@@ -14,9 +14,9 @@ import TravelAgent from "./component/pages/Place/TravelAgent/TravelAgent";
 function App() {
   return (
     <div>
-      <Navigation />
-      <Box marginX="10%">
-        <BrowserRouter>
+      <BrowserRouter>
+        <Navigation />
+        <Box marginX="10%">
           <div>
             <Routes>
               <Route path="/" element={<Landing />} />
@@ -29,9 +29,10 @@ function App() {
               </Route>
             </Routes>
           </div>
-        </BrowserRouter>
-      </Box>
-      <Footer />
+        </Box>
+
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

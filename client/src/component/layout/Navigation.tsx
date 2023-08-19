@@ -14,6 +14,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { useState, MouseEvent } from "react";
 import Logo from "../../assets/img/Logo.png";
 import Traveller from "../../assets/img/Traveller.png";
+import { useNavigate } from "react-router-dom";
 
 type Props = {};
 
@@ -22,6 +23,8 @@ const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navigation = (props: Props) => {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
 
@@ -40,6 +43,9 @@ const Navigation = (props: Props) => {
     setAnchorElUser(null);
   };
 
+  const handleLogoClick = () => {
+    navigate("/");
+  };
   return (
     <AppBar position="static" sx={{ backgroundColor: "#ffb553" }}>
       <Container maxWidth="xl">
@@ -48,6 +54,7 @@ const Navigation = (props: Props) => {
             src={Logo}
             alt="Logo"
             style={{ width: "15%", margin: "1rem", borderRadius: "0.5rem" }}
+            onClick={handleLogoClick}
           />
 
           <Box
