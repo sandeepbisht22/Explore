@@ -23,7 +23,7 @@ const AboutStateSection = ({ isReverse = false }: Props) => {
         sx={{ clear: "both" }}
       >
         <Box width="35%">
-          <ImageListing imageData={[]} />
+          <ImageListing imageData={[]} width={500} height={450} />
         </Box>
         <Divider orientation="vertical" sx={{ height: "20rem" }} />
         <Box width="55%"></Box>

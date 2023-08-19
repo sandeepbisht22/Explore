@@ -75,7 +75,7 @@ const AboutStateBox = (props: Props) => {
           </Grid>
         </Grid>
       </Box>
-      <ImageListing imageData={[]} />
+      <ImageListing imageData={[]} width={500} height={450} />
       <Button
         variant="contained"
         sx={{

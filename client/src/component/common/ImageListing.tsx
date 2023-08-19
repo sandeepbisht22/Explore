@@ -2,6 +2,8 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 type Props = {
   imageData: tImageListing[];
+  width: number;
+  height: number;
 };
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
@@ -13,10 +15,10 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
   };
 }
 
-const ImageListing = ({ imageData }: Props) => {
+const ImageListing = ({ imageData, width, height }: Props) => {
   return imageData && imageData.length > 0 ? (
     <ImageList
-      sx={{ width: 500, height: 450 }}
+      sx={{ width: width, height: height }}
       variant="quilted"
       cols={4}
       rowHeight={121}
