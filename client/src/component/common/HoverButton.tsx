@@ -1,6 +1,6 @@
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
-import React from "react";
+import Tooltip from "@mui/material/Tooltip";
 import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
 import FestivalIcon from "@mui/icons-material/Festival";
 import HotelIcon from "@mui/icons-material/Hotel";
@@ -32,44 +32,52 @@ const HoverButton = (props: Props) => {
       }}
     >
       {currentPath[currentPath.length - 1] !== "how-to-reach" && (
-        <Avatar
-          alt="Cindy Baker"
-          src="/static/images/avatar/3.jpg"
-          sx={{ background: "white", border: "1px solid black" }}
-          onClick={() => navigateTo("how-to-reach")}
-        >
-          <TimeToLeaveIcon sx={{ color: "orange" }} />
-        </Avatar>
+        <Tooltip title="Travel Means">
+          <Avatar
+            alt="Cindy Baker"
+            src="/static/images/avatar/3.jpg"
+            sx={{ background: "white", border: "1px solid black" }}
+            onClick={() => navigateTo("how-to-reach")}
+          >
+            <TimeToLeaveIcon sx={{ color: "orange" }} />
+          </Avatar>
+        </Tooltip>
       )}
       {currentPath[currentPath.length - 1] !== "place-data" && (
-        <Avatar
-          alt="Cindy Baker"
-          src="/static/images/avatar/3.jpg"
-          sx={{ background: "white", border: "1px solid black" }}
-          onClick={() => navigateTo("place-data")}
-        >
-          <FestivalIcon sx={{ color: "orange" }} />
-        </Avatar>
+        <Tooltip title="Place Info">
+          <Avatar
+            alt="Cindy Baker"
+            src="/static/images/avatar/3.jpg"
+            sx={{ background: "white", border: "1px solid black" }}
+            onClick={() => navigateTo("place-data")}
+          >
+            <FestivalIcon sx={{ color: "orange" }} />
+          </Avatar>
+        </Tooltip>
       )}
       {currentPath[currentPath.length - 1] !== "travel-agent" && (
-        <Avatar
-          alt="Cindy Baker"
-          src="/static/images/avatar/3.jpg"
-          sx={{ background: "white", border: "1px solid black" }}
-          onClick={() => navigateTo("travel-agent")}
-        >
-          <HotelIcon sx={{ color: "orange" }} />
-        </Avatar>
+        <Tooltip title="Travel Agent">
+          <Avatar
+            alt="Cindy Baker"
+            src="/static/images/avatar/3.jpg"
+            sx={{ background: "white", border: "1px solid black" }}
+            onClick={() => navigateTo("travel-agent")}
+          >
+            <HotelIcon sx={{ color: "orange" }} />
+          </Avatar>
+        </Tooltip>
       )}
       {currentPath[currentPath.length - 1] !== "local-help" && (
-        <Avatar
-          alt="Cindy Baker"
-          src="/static/images/avatar/3.jpg"
-          sx={{ background: "white", border: "1px solid black" }}
-          onClick={() => navigateTo("local-help")}
-        >
-          <SupportAgentIcon sx={{ color: "orange" }} />
-        </Avatar>
+        <Tooltip title="Local help">
+          <Avatar
+            alt="Cindy Baker"
+            src="/static/images/avatar/3.jpg"
+            sx={{ background: "white", border: "1px solid black" }}
+            onClick={() => navigateTo("local-help")}
+          >
+            <SupportAgentIcon sx={{ color: "orange" }} />
+          </Avatar>
+        </Tooltip>
       )}
     </Stack>
   );
