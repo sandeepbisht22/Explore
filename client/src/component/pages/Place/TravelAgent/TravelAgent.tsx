@@ -1,9 +1,9 @@
-import React from "react";
+import Box from "@mui/material/Box";
 
 type Props = {};
 
 const TravelAgent = (props: Props) => {
-  return <div>TravelAgent</div>;
+  return <Box>Travel Agent</Box>;
 };
 
 export default TravelAgent;
