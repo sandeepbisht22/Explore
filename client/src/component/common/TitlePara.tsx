@@ -5,9 +5,10 @@ import Divider from "@mui/material/Divider";
 type Props = {
   title: string;
   content: string;
+  type: "bullet" | "para";
 };
 
-const TitlePara = ({ title, content }: Props) => {
+const TitlePara = ({ title, content, type }: Props) => {
   return (
     <Box m="2rem" padding="1rem" boxShadow={"5"} borderRadius="1rem">
       <Box mb="0.5rem">
@@ -17,7 +18,15 @@ const TitlePara = ({ title, content }: Props) => {
       </Box>
       <Divider />
       <Box mt="1rem">
-        <Typography variant="body1">{content}</Typography>
+        {type === "para" ? (
+          <Typography variant="body1">{content}</Typography>
+        ) : (
+          <ul>
+            {content.split(".").map((con, i) => {
+              return i < content.split(".").length - 1 ? <li>{con}</li> : <></>;
+            })}
+          </ul>
+        )}
       </Box>
     </Box>
   );
