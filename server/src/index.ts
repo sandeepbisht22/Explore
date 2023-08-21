@@ -1,6 +1,7 @@
 import express from "express";
 import connectDB from "./db/DB";
 import bodyParser from "body-parser";
+import placeRouter from "./route/PlaceRouter";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
   });
 });
 
+app.use("/place", placeRouter);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
