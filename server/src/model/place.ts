@@ -6,6 +6,7 @@ const placeSchema = new mongoose.Schema<placeInterface>({
     longitude: Number,
     latitude: Number,
   },
+  state: { type: String },
 });
 
 const PlaceModel = mongoose.model("place", placeSchema);
@@ -17,6 +18,7 @@ interface placeInterface extends mongoose.Document {
     longitude: number;
     latitude: number;
   };
+  state: string;
 }
 
 export default PlaceModel;
